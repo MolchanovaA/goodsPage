@@ -6,7 +6,7 @@ class Counter {
 
   toDetermineTarget() {
     let counterScore = parseInt(localStorage.getItem("score"));
-    document.querySelector(".score").innerText = counterScore;
+    document.querySelector(".score").innerText = counterScore || "0";
 
     this._counter.addEventListener("click", ({ target }) => {
       if (target.classList.contains("increase")) {
