@@ -1,0 +1,73 @@
+form h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: rgb(227, 232, 232);
+  border: 1px solid rgb(153, 149, 148);
+  color: rgb(73, 77, 77);
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: 2px solid rgb(203, 68, 0);
+}
+
+label:not(.labelWithNoHover):hover > * {
+  box-shadow: 0px 8px 16px -2px rgba(203, 68, 0, 0.41);
+}
+
+.labelWithNoHover {
+  transition: all 1s ease-in;
+}
+.labelWithNoHover:hover {
+  color: rgb(203, 68, 0);
+}
+.inputCheckBox,
+.isNotHidden {
+  display: none;
+}
+
+.inputCheckBox:checked ~ .isNotHidden {
+  display: inline-block;
+}
+.inputCheckBox:checked + .isHidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  main h1 {
+    font-size: 25px;
+  }
+}

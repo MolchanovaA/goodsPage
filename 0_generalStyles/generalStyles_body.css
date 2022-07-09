@@ -1,0 +1,46 @@
+body {
+  font: 20px 'Rubik', sans-serif;
+  color: rgb(73, 77, 77);
+  padding: 2vw;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+button[type='submit'] {
+  background-color: rgb(227, 232, 232);
+  border: 1px solid rgb(153, 149, 148);
+  color: rgb(203, 68, 0);
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  max-width: 150px;
+  transition: all 0.5s;
+}
+button[type='submit']:hover {
+  background-color: rgb(203, 68, 0);
+  color: rgb(227, 232, 232);
+}
+
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  main h1 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,39 @@
+header {
+  position: relative;
+}
+.headImg {
+  width: 100%;
+}
+.headerNav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(153, 149, 148, 0.3);
+}
+
+.navigList {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigList li {
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  transition: all 1.5s;
+}
+
+.navigList a {
+  color: rgb(203, 68, 0);
+  transition: all 1.5s;
+}
+.navigList li:hover > a {
+  color: rgb(227, 232, 232);
+}
+
+.navigList li:hover {
+  background-color: rgb(203, 68, 0);
+}
