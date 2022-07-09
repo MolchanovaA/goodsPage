@@ -17,7 +17,7 @@ class Counter {
       } else if (target.classList.contains("decrease")) {
         function decr() {
           if (counterScore === 0) {
-            return (counterScore = 0);
+            return 0;
           }
           counterScore--;
         }
@@ -35,7 +35,12 @@ class Counter {
         console.log(counterScore, "from Nan", typeof counterScore);
         counterScore = 0;
       }
-      console.log(counterScore, "after Nan", typeof counterScore);
+      console.log(
+        counterScore,
+        "after Nan",
+        typeof counterScore,
+        counterScore === "NaN"
+      );
       this.setScore(counterScore);
     });
   }
