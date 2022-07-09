@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../0_generalStyles/AllGeneralStyles.css">
-    <link rel="stylesheet" href="./styles//prodCardStyles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <script data-search-pseudo-elements defer src="../0_icons/all.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./0_generalStyles/AllGeneralStyles.css" />
+    <link rel="stylesheet" href="./styles//prodCardStyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cef6e28be6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      data-search-pseudo-elements
+      defer
+      src="../0_icons/all.min.js"
+    ></script>
     <title>Карточка товара</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img class="headImg" src="../0_pics/Dogs_Cats_Guinea_pigs.jpg" alt="pic">
-        <nav class="headerNav">
-            <ul class="navigList ">
-                <li><a href="#">Корзина</a></li>
-                <li><a href="../1_authorization/authSingIn.html">Авторизироваться</a></li>
-            </ul>
-        </nav>
+      <img class="headImg" src="./0_pics/Dogs_Cats_Guinea_pigs.jpg" alt="pic" />
+      <nav class="headerNav">
+        <ul class="navigList">
+          <li><a href="#">Корзина</a></li>
+          <li>
+            <a href="https://registration-authorisation.netlify.app/index2.html"
+              >Авторизироваться</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="card">
-            <h1>Кот с усами</h1>
-            <img src="./goods/cat1.jpg" alt="cat">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti exercitationem est, amet voluptate distinctio nisi totam maiores excepturi reprehenderit delectus
-                dolore id repellat assumenda fugit facere sit fugiat. At, sint!</p>
-            <div>стоимость
-                <span class="price">20</span>
-            </div>
-            <button type="submit">Купить</button>
+      <div class="card">
+        <h1>Кот с усами</h1>
+        <img src="./goods/cat1.jpg" alt="cat" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          exercitationem est, amet voluptate distinctio nisi totam maiores
+          excepturi reprehenderit delectus dolore id repellat assumenda fugit
+          facere sit fugiat. At, sint!
+        </p>
+        <div>
+          стоимость
+          <span class="price">20</span>
         </div>
+        <div id="counterContainer">
+          Укажите количество
+          <i class="fa-solid fa-angle-down decrease"></i>
+          <span id="scoreCounter" class="score">0</span>
+          <i class="fa-solid fa-angle-up increase"></i>
+          <i class="fa-solid fa-question setNewValue"></i>
+          <i class="fa-solid fa-eraser clear"></i>
+        </div>
+        <button type="submit">Купить</button>
+      </div>
     </main>
     <footer>
-        <nav class="footerNav">
-            <a href="#">Оплата</a>
-            <a href="#">Доставка</a>
-            <a href="#">Контакты</a>
-        </nav>
+      <nav class="footerNav">
+        <a href="#">Оплата</a>
+        <a href="#">Доставка</a>
+        <a href="#">Контакты</a>
+      </nav>
     </footer>
-</body>
+    <script src="./jsFiles/goods.js"></script>
+  </body>
 </html>
