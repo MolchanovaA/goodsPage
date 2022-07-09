@@ -18,6 +18,71 @@
   background-color: rgb(203, 68, 0);
   color: rgb(227, 232, 232);
 }
+
+.footerNav_delivery,
+.footerNav_payment,
+.footerNav_contacts {
+  position: relative;
+}
+
+.footerNav_delivery_icon,
+.footerNav_payment_icon,
+.footerNav_contacts_icon {
+  position: absolute;
+  left: 40%;
+  opacity: 0;
+  top: -30px;
+  transition: all 2s;
+}
+
+.footerNav_delivery:hover .footerNav_delivery_icon {
+  animation: car 2s infinite;
+  color: rgb(203, 68, 0);
+  opacity: 1;
+}
+
+.footerNav_payment:hover .footerNav_payment_icon {
+  animation: money 2s infinite;
+  color: rgb(84, 112, 75);
+  opacity: 1;
+}
+
+.footerNav_contacts:hover .footerNav_contacts_icon {
+  animation: phone 2s infinite;
+  color: rgb(212, 73, 31);
+  opacity: 1;
+}
+
+@keyframes car {
+  0% {
+    top: -30px;
+    left: 0;
+  }
+  50% {
+    top: -30px;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  100% {
+    top: -30px;
+    left: 0;
+  }
+}
+
+@keyframes money {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes phone {
+  100% {
+    transform: scale(2) skewX(20deg);
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .footerNav a {
     font-size: 15px;
