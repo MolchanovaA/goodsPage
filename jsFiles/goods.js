@@ -39,7 +39,7 @@ class Counter {
         counterScore,
         "after Nan",
         typeof counterScore,
-        counterScore === "NaN"
+        isNaN(counterScore)
       );
       this.setScore(counterScore);
     });
