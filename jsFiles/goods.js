@@ -16,6 +16,9 @@ class Counter {
         incr();
       } else if (target.classList.contains("decrease")) {
         function decr() {
+          if (counterScore < 0) {
+            return (counterScore = 0);
+          }
           counterScore--;
         }
         decr();
