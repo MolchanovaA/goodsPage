@@ -20,9 +20,6 @@ class Counter {
             return (counterScore = 0);
           }
           counterScore--;
-          if (counterScore === "NaN") {
-            counterScore = 0;
-          }
         }
         decr();
       } else if (target.classList.contains("clear")) {
@@ -32,6 +29,9 @@ class Counter {
           var newValue = +prompt("set new value", "");
         } while (isNaN(newValue));
         counterScore = newValue || counterScore;
+      }
+      if (counterScore === "NaN") {
+        counterScore = 0;
       }
       this.setScore(counterScore);
     });
