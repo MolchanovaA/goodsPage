@@ -30,17 +30,7 @@ class Counter {
         } while (isNaN(newValue));
         counterScore = newValue || counterScore;
       }
-      console.log(counterScore, "before Nan", typeof counterScore);
-      if (counterScore === "NaN") {
-        console.log(counterScore, "from Nan", typeof counterScore);
-        counterScore = 0;
-      }
-      console.log(
-        counterScore,
-        "after Nan",
-        typeof counterScore,
-        isNaN(counterScore)
-      );
+
       this.setScore(counterScore);
     });
   }
