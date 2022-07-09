@@ -16,8 +16,8 @@ class Counter {
         incr();
       } else if (target.classList.contains("decrease")) {
         function decr() {
-          if (counterScore === 0) {
-            return 0;
+          if (counterScore === 0 || isNaN(counterScore)) {
+            return (counterScore = 0);
           }
           counterScore--;
         }
